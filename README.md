@@ -1,15 +1,15 @@
 ## [Learning to Generalize Unseen Domains via Memory-based Multi-Source Meta-Learning for Person Re-Identification](https://arxiv.org/abs/2012.00417) (CVPR 2021)
 
 ### Introduction
-This is the Pytorch implementation for M<sup>3</sup>L.
+This is the Pytorch implementation for M<sup>3</sup>L. Code will be released soon!
 
 ![](figures/overview.png)
 
-### Requirements
+[0]: ### Requirements
 
-- CUDA>=10.0
-- At least three 2080-Ti GPUs 
-- Other necessary packages listed in [requirements.txt](requirements.txt)
+[0]: - CUDA>=10.0
+[0]: - At least three 2080-Ti GPUs 
+[0]: - Other necessary packages listed in [requirements.txt](requirements.txt)
 
 
 ### Acknowledgments
