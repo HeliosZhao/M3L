@@ -4,14 +4,12 @@
 This is the Pytorch implementation for M<sup>3</sup>L. Code will be released soon!
 
 ![](figures/overview.png)
+ 
+### Requirements
 
-[comment]: 
-  ###Requirements
-
-[comment]: 
--CUDA>=10.0
--At least three 2080-Ti GPUs 
--Other necessary packages listed in [requirements.txt](requirements.txt)
+- CUDA>=10.0
+- At least three 2080-Ti GPUs 
+- Other necessary packages listed in [requirements.txt](requirements.txt)
 
 
 ### Acknowledgments
