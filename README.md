@@ -6,10 +6,10 @@ This is the Pytorch implementation for M<sup>3</sup>L. Code will be released soo
 ![](figures/overview.png)
 
 [comment]: 
-  ### Requirements
+  ###Requirements
 
 [comment]: 
-- CUDA>=10.0
+-CUDA>=10.0
 [comment]: - At least three 2080-Ti GPUs 
 [comment]: - Other necessary packages listed in [requirements.txt](requirements.txt)
 
