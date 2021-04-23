@@ -13,7 +13,8 @@ This is the Pytorch implementation for M<sup>3</sup>L. Code will be released soo
 - Training Data
 
   The model is trained and evaluated on [Market-1501](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view), [DukeMTMC-reID](https://drive.google.com/file/d/1jjE85dRCMOgRtvJ5RQV9-Afs-2_5dY3O/view), [MSMT17](https://drive.google.com/file/d/1c0J6V5XX3_gmIZDW0FObyfyUAohLkv9S/view?usp=sharing), [CUHK03](https://drive.google.com/file/d/1ILKiSthHm_XVeRQU2ThWNDVSO7lKWAZ_/view?usp=sharing) and [CUHK-NP](https://github.com/zhunzhong07/person-re-ranking/blob/master/CUHK03-NP/README.md)
-   Unzip all datasets and ensure the file structure is as follow:
+  
+  Unzip all datasets and ensure the file structure is as follow:
    
    ```
    data    
