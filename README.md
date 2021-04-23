@@ -19,8 +19,8 @@ This is the Pytorch implementation for M<sup>3</sup>L. Code will be released soo
    data    
    │
    └─── market1501 / dukemtmc / cuhknp / cuhk03 / msmt17
-   |    │   
-   |    └─── DukeMTMC-reID / Market-1501-v15.09.15 / (labeled / detected) / cuhk03_release / MSMT17_V2
+        │   
+        └─── DukeMTMC-reID / Market-1501-v15.09.15 / (labeled / detected) / cuhk03_release / MSMT17_V2
    ```
    <!-- |        │   
    |        └─── bounding_box_train
@@ -95,4 +95,4 @@ This repo borrows partially from [MWNet](https://github.com/xjtushujun/meta-weig
 ```
 
 ### Contact
-[Yuyang Zhao](yuyangzhao98@gmail.com)
+Email: yuyangzhao98@gmail.com
