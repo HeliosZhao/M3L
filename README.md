@@ -73,7 +73,7 @@ python main.py \
 --evaluate --resume $RESUME
 ```
 
-**Note:** For CUHK03 dataset, we use the old protocol (cuhk03) as the source domain for training the model and detected subset of the new protocol (cuhknp) as the target domain for evaluation. We will add the results with cuhknp as the source domain at a later date.
+**Note:** For CUHK03 dataset, we use the old protocol (cuhk03) as the source domain for training the model and detected subset of the new protocol (cuhknp) as the target domain for evaluation. We recommend using **the new protocol** for both training and testing and we will add the results with cuhknp as the source domain at a later date.
 
 ### Results
 ![](figures/m3l_results.png)
