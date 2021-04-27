@@ -12,16 +12,27 @@ This is the Pytorch implementation for M<sup>3</sup>L.
 - Other necessary packages listed in [requirements.txt](requirements.txt)
 - Training Data
 
-  The model is trained and evaluated on [Market-1501](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view), [DukeMTMC-reID](https://drive.google.com/file/d/1jjE85dRCMOgRtvJ5RQV9-Afs-2_5dY3O/view), [MSMT17](https://drive.google.com/file/d/1c0J6V5XX3_gmIZDW0FObyfyUAohLkv9S/view?usp=sharing), [CUHK03](https://drive.google.com/file/d/1ILKiSthHm_XVeRQU2ThWNDVSO7lKWAZ_/view?usp=sharing) and [CUHK-NP](https://github.com/zhunzhong07/person-re-ranking/blob/master/CUHK03-NP/README.md)
+  The model is trained and evaluated on [Market-1501](https://drive.google.com/file/d/0B8-rUzbwVRk0c054eEozWG9COHM/view), [DukeMTMC-reID](https://drive.google.com/file/d/1jjE85dRCMOgRtvJ5RQV9-Afs-2_5dY3O/view), [MSMT17_V1](https://www.pkuvmc.com/dataset.html), [MSMT17_V2](https://www.pkuvmc.com/dataset.html), [CUHK03](https://drive.google.com/file/d/1ILKiSthHm_XVeRQU2ThWNDVSO7lKWAZ_/view?usp=sharing) and [CUHK-NP](https://github.com/zhunzhong07/person-re-ranking/blob/master/CUHK03-NP/README.md)
+
+  <b> 
   
+  *Note:* 
+  
+  For CUHK03 dataset, we use the old protocol (CUHK03) as the source domain for training the model and the detected subset of the new protocol (CUHK-NP) as the target domain for evaluation. 
+
+  For MSMT17, we use the MSMT17_V2 for both training and testing. 
+
+  We recommend using *the detected subset of CUHK-NP* and *MSMT17_V1* for both training and testing and we will add the results with them at a later date. 
+  </b>
+
   Unzip all datasets and ensure the file structure is as follow:
    
    ```
    data    
    │
-   └─── market1501 / dukemtmc / cuhknp / cuhk03 / msmt17
+   └─── market1501 / dukemtmc / cuhknp / cuhk03 / msmt17v1 / msmt17v2
         │   
-        └─── DukeMTMC-reID / Market-1501-v15.09.15 / (labeled / detected) / cuhk03_release / MSMT17_V2
+        └─── DukeMTMC-reID / Market-1501-v15.09.15 / detected / cuhk03_release / MSMT17_V1 / MSMT17_V2
    ```
    <!-- |        │   
    |        └─── bounding_box_train
@@ -57,8 +68,8 @@ This is the Pytorch implementation for M<sup>3</sup>L.
 ### Run
 ```
 ARCH=resMeta/IBNMeta
-SRC1/SRC2/SRC3=market1501/dukemtmc/cuhk03/msmt17
-TARGET=market1501/dukemtmc/cuhknp/msmt17
+SRC1/SRC2/SRC3=market1501/dukemtmc/cuhk03/msmt17v1/msmt17v2
+TARGET=market1501/dukemtmc/cuhknp/msmt17v1/msmt17v2
 
 # train
 CUDA_VISIBLE_DEVICES=0,1,2 python main.py \
@@ -68,12 +79,10 @@ CUDA_VISIBLE_DEVICES=0,1,2 python main.py \
 
 # evaluate
 python main.py \
--a $ARCH -d $TARGET --BNNeck \
+-a $ARCH -d $TARGET \
 --logs-dir $LOG_DIR --data-dir $DATA_DIR \
 --evaluate --resume $RESUME
 ```
-
-**Note:** For CUHK03 dataset, we use the old protocol (cuhk03) as the source domain for training the model and detected subset of the new protocol (cuhknp) as the target domain for evaluation. We recommend using **the new protocol** for both training and testing and we will add the results with cuhknp as the source domain at a later date.
 
 ### Results
 ![](figures/m3l_results.png)

@@ -3,14 +3,16 @@ import warnings
 
 from .dukemtmc import DukeMTMC
 from .market1501 import Market1501
-from .msmt17 import MSMT17
+from .msmt17v2 import MSMT17_V2
+from .msmt17v1 import MSMT17_V1
 from .cuhk03 import CUHK03
 from .cuhknp import CUHK_NP
 
 __factory = {
     'market1501': Market1501,
     'dukemtmc': DukeMTMC,
-    'msmt17': MSMT17,
+    'msmt17v2': MSMT17_V2,
+    'msmt17v1': MSMT17_V1,
     'cuhk03': CUHK03,
     'cuhknp': CUHK_NP
 }

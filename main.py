@@ -229,11 +229,11 @@ if __name__ == '__main__':
     # data
     parser.add_argument('-d', '--dataset', type=str, default='market1501',
                         choices=datasets.names())
-    parser.add_argument('--dataset_src1', type=str, default='cuhk03',
+    parser.add_argument('--dataset_src1', type=str, default='cuhknp',
                         choices=datasets.names())
     parser.add_argument('--dataset_src2', type=str, default='dukemtmc',
                         choices=datasets.names())
-    parser.add_argument('--dataset_src3', type=str, default='msmt17',
+    parser.add_argument('--dataset_src3', type=str, default='msmt17v1',
                         choices=datasets.names())
     parser.add_argument('-b', '--batch-size', type=int, default=64)
     parser.add_argument('--test-batch-size', type=int, default=256)

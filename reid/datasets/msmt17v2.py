@@ -2,7 +2,7 @@ from __future__ import print_function, absolute_import
 import os.path as osp
 
 
-class MSMT17(object):
+class MSMT17_V2(object):
 
     def __init__(self, root, combine_all=False):
 
