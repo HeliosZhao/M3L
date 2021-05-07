@@ -244,7 +244,7 @@ if __name__ == '__main__':
                         help="each minibatch consist of "
                              "(batch_size // num_instances) identities, and "
                              "each identity has num_instances instances, "
-                             "default: 0 (NOT USE)")
+                             "default: 4")
 
     # model
     parser.add_argument('-a', '--arch', type=str, default='resMeta',
