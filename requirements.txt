@@ -4,5 +4,5 @@ torchvision
 seaborn==0.9.0
 numpy==1.17.2
 matplotlib==3.1.1
-Pillow==8.1.1
+Pillow==8.2.0
 scikit_learn==0.24.1
